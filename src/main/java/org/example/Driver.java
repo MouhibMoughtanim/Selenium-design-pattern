@@ -1,6 +1,5 @@
 package org.example;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,7 +15,7 @@ public class Driver {
     public static WebDriver getInstance(){
         if(driver == null){
             if(Objects.equals(Constants.browserName, "chrome")) {
-                System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
                 driver= new ChromeDriver();
             }
         }
