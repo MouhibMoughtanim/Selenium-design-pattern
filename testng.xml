@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="checking testng">
+     <classes>
+         <class name="org.example.GitHubPageTest">
+             <methods>
+                 <include name="openWindow"/>
+             </methods>
+         </class>
+         <class name="org.example.OpenWindow">
+             <methods>
+                 <include name="verifyRadioBtnClick"/>
+                 <include name="verfiyCityChoice"/>
+                 <include name="chooseDate"/>
+                 <include name="checkNumberOfPassengers"/>
+             </methods>
+         </class>
+         <class name="org.example.ProductPageTest">
+             <methods>
+                 <include name="addProducts"/>
+                 <include name="proceedToPayement"/>
+             </methods>
+         </class>
+     </classes>
+</test>
+</suite>
